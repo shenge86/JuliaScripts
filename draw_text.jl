@@ -1,9 +1,13 @@
-using Luxor
+using Luxor, FFMPEG
 
 #=TUTORIAL GUIDE
 https://juliagraphics.github.io/Luxor.jl/dev/howto/text/#Animating-text
 
-Adapted from tutorial here but changed to use a font which can have Chinese characters.
+Author: Shen
+Name: Text creator
+Description:
+    Adapted from tutorial here but changed to use a font which can have Chinese characters.
+    Also uses FFMPEG to create mp4 files
 =#
 
 function frame(scene, framenumber)
@@ -27,4 +31,7 @@ function frame(scene, framenumber)
 end
 
 amovie = Movie(600, 250, "a movie")
-animate(amovie, Scene(amovie, frame, 1:250), creategif=true, pathname="outputs/textanimation_shen.gif")
+#animate(amovie, Scene(amovie, frame, 1:250), creategif=true, pathname="outputs/textanimation_shen.gif")
+tempdir = "temp"
+animate(amovie, Scene(amovie, frame, 1:250), creategif=false, tempdirectory=tempdir)
+FFMPEG.ffmpeg_exe(`-r 30 -f image2 -i $(tempdir)/%10d.png -c:v libx264 -r 30 -pix_fmt yuv420p -y outputs/textanimation_shen.mp4`)
