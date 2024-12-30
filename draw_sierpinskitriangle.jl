@@ -2,7 +2,7 @@ using Luxor, Colors
 
 dim = 500
 Drawing(dim,dim,"outputs/sierpinskitriangle.png")
-background("white")
+background("black")
 origin()
 
 function triangle(points, degree)
