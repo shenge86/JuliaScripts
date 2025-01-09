@@ -1,0 +1,35 @@
+Creative and entrepreneurial, I'm proficient and passionate in space mission design, physics simulations, data analysis, and lunar imagery as well as project management, technical writing and education. I presently work on the flight dynamics team for lunar exploration on the Intuitive Machines lunar projects. I worked TRAJ console shift for the Intuitive Machines first lunar mission which successfully landed on the moon in February 2024. I'm currently working on the second lunar mission which will launch early 2025.
+
+In August 2018, I attained the 35 Under 35 award presented by the International Institute of Space Commerce (IISC). In the past, I was also extremely active in the local AIAA Houston chapter and have attained volunteering and journalism awards there.
+
+I also presently run a weekly space radio show, previously hosted on Action One Media but now on my own platform. In my free time, I enjoy reading science fiction and web novels, playing video games, coding and writing. Some key links:
+
+Podcasting on Facebook / Youtube (https://www.youtube.com/playlist?list=PLnNqb4NJc_hJJMDYGodLPbdw40erpsf8e + https://www.patreon.com/sg2onspace)
+Writing on Medium (https://medium.com/@shenge86) 
+Coding (https://github.com/shenge86)
+
+[English / 英语]
+
+有独创性和企业精神，我拥有工程分析、物理模型、系统工程、项目管理、技术文档、刊物写稿的技术能级。我的经验涵盖航天、可再生能源、和教育。我喜欢阅读科学和数学，学习物理，辅导学生，旅行世界。【中文 / 中国語 / Chinese】
+
+私は航空宇宙が好きです (日语 / 日本語 / Japanese)
+
+C++:
+#include <iostream>
+# C++
+class Shen {
+public:
+string first_name = "Shen";
+string last_name = "Ge";
+int avgexp = "3";
+double yrsofschool = "7.5";
+string description_prof = "A creative and entrepreneurial engineer with a diverse set of skills including            space systems, space dynamics, project management, and coding, I enjoy working on projects of significant impact stretching the frontiers of discovery and human exploration. I am passionate about what I do and work well in many different team team environments.";
+string description_hobby = "I enjoy writing poetry, traveling, tinkering and running a radio show."
+string contact_email = "shen@shenge.us";
+string contact_skype = "shenge.spaceinc";
+};
+
+int main() {
+// declare new shen
+Shen shenge;
+}
